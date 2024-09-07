@@ -117,3 +117,77 @@ footer
 .nav-link:hover {
     color: #ff136f;
 }
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .carousel-item {
+        padding: 10px 20px;
+    }
+    .buy-now-button {
+        padding: 8px 20px;
+    }
+}
+footer {
+    background-color: #fceae8;
+    padding: 20px 0;
+    border-top: 2px solid #ff136f;
+}
+footer p {
+    color: #333;
+    margin: 0;
+}
+input.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+input.form-control:focus {
+    border-color: #ff136f;
+    box-shadow: 0 0 5px rgba(255, 19, 111, 0.3);
+}
+.section {
+    border-bottom: 2px solid #fceae8;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff136f;
+    border-radius: 10px;
+}
