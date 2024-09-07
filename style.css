@@ -109,3 +109,11 @@ footer
 .nav-item {
     margin-left: 20px;
 }
+.buy-now-button:hover {
+    background-image: linear-gradient(to bottom, #ff136f 0%, #ff589b 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.nav-link:hover {
+    color: #ff136f;
+}
